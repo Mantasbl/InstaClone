@@ -14,10 +14,6 @@ use App\Mail\NewUserWelcomeMail;
 
 Auth::routes();
 
-Route::get('/email', function () {
-    return new NewUserWelcomeMail();
-});
-
 Route::post('follow/{user}', 'FollowsController@store' );
 
 Route::get('/', 'PostsController@index');
