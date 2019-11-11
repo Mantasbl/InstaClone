@@ -10,7 +10,7 @@
             <div>
                 <div class="d-flex align-items-center pb-3">
                     <div class="pr-3">
-                        <img src="{{ $post->user->profile->profileImage }}" alt="" class="rounded-circle"
+                        <img src="{{ $post->user->profile->profileImage() }}" alt="" class="rounded-circle"
                             width="40px">
                     </div>
                     <div>
